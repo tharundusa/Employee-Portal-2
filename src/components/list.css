@@ -1,0 +1,34 @@
+.list-heading{
+    color: blue;
+    text-align: center;
+}
+.employee{
+    display: flex;
+    width: 500px;
+    justify-items: center;
+    justify-content: space-around;
+    margin: 10px 0px;
+}
+.list-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.edit-btn{
+    background-color: lightblue;
+}
+.delete-btn{
+    background-color: red;
+}
+.btn{
+    border: none;
+    border-radius: 5px;
+    color: white;
+    height: 40px;
+    width: 80px;
+    cursor: pointer;
+}
+.errors{
+    font-size: 20px;
+    color: red;
+}
