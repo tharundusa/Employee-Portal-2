@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import AddEmployee from "./components/AddEmployee";
 import EmployeeList from "./components/EmployeeList";
 import EditEmployee from "./components/EditEmployee";
-import axios, { Axios } from "axios";
+import axios from "axios";
 function App() {
   const [employees,setEmployees] =useState([]);
   const [editEmployee,seteditEmployee] =useState(false);
@@ -18,8 +18,8 @@ function App() {
  
   const handleAction=(type,emp)=>{
        if(type==="delete"){
-         axios.delete("https://6263f8df98095dcbf92971f3.mockapi.io/Employee/"+emp.id).
-         then(()=>{
+         axios.delete("https://6263f8df98095dcbf92971f3.mockapi.io/Employee/"+emp.id)
+         .then(()=>{
           fetchEmployee();
          });
        }
